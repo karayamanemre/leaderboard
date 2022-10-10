@@ -1,4 +1,4 @@
-import getScore from "./getScore.js";
+import getScore from './getScore.js';
 
 const postScore = async (name, score) => {
   await fetch(
@@ -14,8 +14,8 @@ const postScore = async (name, score) => {
       },
     },
   )
-   .then((response) => response.json())
-   .then(() => getScore());
+  .then((response) => response.json())
+  .then(() => getScore());
 };
 
 export default postScore;
