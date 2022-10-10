@@ -54,7 +54,8 @@ section {
 
 .scores-header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 15px;
   margin-bottom: 25px;
   align-items: center;
 }
@@ -159,7 +160,7 @@ button:active {
 
   .scores {
     width: 90%;
-    padding: 15px;
+    padding: 15px 0;
   }
 
   .scores-header {
@@ -172,7 +173,7 @@ button:active {
     display: flex;
     flex-direction: column;
     width: 90%;
-    padding: 15px;
+    padding: 15px 0;
   }
 
   ol {
@@ -191,7 +192,8 @@ button:active {
   }
 
   .scores-list {
-    width: 90%;
+    width: 85%;
     padding: 0;
+    align-self: center;
   }
 }
