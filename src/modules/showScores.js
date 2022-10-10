@@ -1,13 +1,13 @@
 const scoreList = document.querySelector('.scores-list');
 
-const addScore = (item) => {
+const addScore = (item, index) => {
   scoreList.innerHTML += `
-  <ol>
+  <ul>
     <li>
-      <span>${item.user}</span>
+      <span>${index + 1} - ${item.user}</span>
       <span>${item.score} PTS</span>
     </li>
-  </ol>
+  </ul>
   `;
 };
 

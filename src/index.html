@@ -12,13 +12,15 @@
     <section>
       <div class="scores">
         <div class="scores-header">
-          <h2>Recent Scores</h2>
-          <button id="refresh-btn">Refresh</button>
+          <h3>All Scores</h3>
+          <div id="refresh-btn"></div>
         </div>
         <div class="scores-list"></div>
       </div>
       <div class="add-scores">
-        <h2>Add Your Score</h2>
+        <div class="add-header">
+          <h3>Add Your Score</h3>
+        </div>  
         <form id="add-form" action="submit">
           <input id="name" type="text" placeholder="Name" required>
           <input id="score" type="number" min="0" max="860630" placeholder="Score" required>

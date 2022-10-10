@@ -13,11 +13,6 @@ body {
   color: #fff;
 }
 
-ol {
-  display: list-item;
-  font-size: 20px;
-}
-
 main {
   display: flex;
   flex-direction: column;
@@ -36,7 +31,7 @@ h1 {
   margin: 25px 0;
 }
 
-h2 {
+h3 {
   font-size: 30px;
 }
 
@@ -54,24 +49,29 @@ section {
 
 .scores-header {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  justify-content: space-between;
   margin-bottom: 25px;
   align-items: center;
+  border-top: 2px solid #fff;
 }
 
 .scores-list {
   width: 100%;
   height: auto;
-  padding-left: 50px;
+}
+
+ul {
+  font-size: 20px;
 }
 
 li {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 2px dashed #fff;
-  margin-bottom: 10px;
-  padding: 20px 0;
+  margin-bottom: 25px;
+  height: 50px;
+  font-size: 20px;
 }
 
 .add-scores {
@@ -81,10 +81,17 @@ li {
   padding: 25px;
 }
 
+.add-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  align-items: center;
+  border-top: 2px solid #fff;
+}
+
 form {
   display: flex;
   flex-direction: column;
-  padding: 25px 0;
 }
 
 input {
@@ -111,7 +118,6 @@ button {
   font-weight: 700;
   color: #fff;
   background: transparent;
-  font-size: 20px;
   border-radius: 15px;
   padding: 10px;
   border: 2px solid #fff;
@@ -127,10 +133,23 @@ button:active {
   transform: translateY(2px);
 }
 
+#refresh-btn {
+  background: url('refresh-icon.png');
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#refresh-btn:hover {
+  -webkit-animation: rotate-center 0.6s ease-in-out both;
+  animation: rotate-center 0.6s ease-in-out both;
+}
+
 #add-btn {
   align-self: flex-end;
   width: 250px;
   height: 50px;
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 770px) {
@@ -138,7 +157,7 @@ button:active {
     font-size: 35px;
   }
 
-  h2 {
+  h3 {
     font-size: 26px;
   }
 
@@ -176,7 +195,7 @@ button:active {
     padding: 15px 0;
   }
 
-  ol {
+  ul {
     display: list-item;
     font-size: 16px;
   }
@@ -195,5 +214,17 @@ button:active {
     width: 85%;
     padding: 0;
     align-self: center;
+  }
+}
+
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
