@@ -14,8 +14,8 @@ const postScore = async (name, score) => {
       },
     },
   )
-  .then((response) => response.json())
-  .then(() => getScore());
+    .then((response) => response.json())
+    .then(() => getScore());
 };
 
 export default postScore;
