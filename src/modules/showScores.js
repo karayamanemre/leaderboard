@@ -4,7 +4,7 @@ const addScore = (item) => {
   scoreList.innerHTML += `
   <ol>
     <li>
-      <span>${item.user}:</span>
+      <span>${item.user}</span>
       <span>${item.score} PTS</span>
     </li>
   </ol>
