@@ -1,6 +1,6 @@
 # Leaderboard
 
--
+- A web application that allows you and your friends to submit and save your [Frogger](https://froggerclassic.appspot.com/) scores. With a "Perfect combination of Mountain Dew and mozzarella," it is possible to achieve a high score.
 
 ## Built With
 
@@ -49,7 +49,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- 
+- You can play the classic Frogger game [here](https://froggerclassic.appspot.com/) and submit your scores.
 
 ## 📝 License
 
