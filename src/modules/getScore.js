@@ -1,4 +1,4 @@
-import showList from "./showScores";
+import showList from './showScores.js';
 
 const getScore = async () => {
   await fetch(
