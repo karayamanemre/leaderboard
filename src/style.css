@@ -10,6 +10,7 @@
 body {
   font-family: 'Courier Prime', sans-serif;
   background: url('frogger-bg.jpeg');
+  background-attachment: fixed;
   color: #fff;
 }
 
